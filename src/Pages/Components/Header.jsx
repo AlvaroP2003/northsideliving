@@ -14,7 +14,7 @@ export default function Header() {
     }
 
     return (
-        <header className=" flex justify-between items-center px-5 h-[10vh] shadow-lg lg:px-15 lg:h-[15vh]">
+        <header className="flex justify-between items-center px-7 h-[10vh] shadow-lg lg:px-15 lg:h-[15vh]">
             <img src="/Images/header_main-01.webp" className="w-[175px] lg:w-[300px]"></img>
             <ul className="hidden lg:flex gap-10">
                 <NavLink to='/' className={({isActive}) => isActive ? activeLink : normalLink}>Home</NavLink>
@@ -24,7 +24,7 @@ export default function Header() {
                 <NavLink to='tools' className={({isActive}) => isActive ? activeLink : normalLink}>Tools</NavLink>
                 <NavLink to='contact' className={({isActive}) => isActive ? activeLink : normalLink}>Contact</NavLink>
             </ul>
-            <div
+            <div className="lg:hidden"
                 onClick={() => toggleMenu(true)}
             >
                 <Menu className="text-[#9c7b5c] lg:hidden"/>
