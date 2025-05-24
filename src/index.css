@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Light.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signature';
+  src: url('/fonts/Photograph Signature.ttf') format('truetype');
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+.signature {
+  font-family: 'Signature';
+}
