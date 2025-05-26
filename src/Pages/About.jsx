@@ -16,10 +16,10 @@ export default function About() {
             <div className="flex flex-col items-center gap-5">
                 <h2 className="text-gray-600 font-semibold">REGISTERED WITH:</h2>
                 <div className="grid grid-cols-2 lg:flex lg:gap-1">
-                    <img className='w-[150px] lg:w-[250px]' src="public/Images/ppra-01.webp"/>
-                    <img className='w-[150px] lg:w-[250px]' src="public/Images/ieasa-01.webp"/>
-                    <img className='w-[150px] lg:w-[250px]' src="public/Images/rebosa-01.webp"/>
-                    <img className='w-[150px] lg:w-[250px]' src="public/Images/sacbw-01.webp"/>
+                    <img className='w-[150px] lg:w-[250px]' src="Images/ppra-01.webp"/>
+                    <img className='w-[150px] lg:w-[250px]' src="Images/ieasa-01.webp"/>
+                    <img className='w-[150px] lg:w-[250px]' src="Images/rebosa-01.webp"/>
+                    <img className='w-[150px] lg:w-[250px]' src="Images/sacbw-01.webp"/>
                 </div>
             </div>
         </section>
