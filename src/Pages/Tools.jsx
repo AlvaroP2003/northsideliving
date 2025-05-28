@@ -2,6 +2,7 @@
 import { NotebookPen,Calculator,BookOpenCheck,ExternalLink } from "lucide-react"
 
 export default function Tools() {
+    
 
     const toolData = [
         {
@@ -22,19 +23,42 @@ export default function Tools() {
     ]
 
     return (
-        <section className="flex py-10 justify-center bg-[url('/Images/tools.jpg')] bg-cover bg-center h-fit lg:h-[85vh] lg:items-center">
-            <div className="flex flex-wrap justify-center gap-5">
-                {toolData.map((card, index) => (
-                    <div key={index} className="animate-slideUp cursor-default group flex flex-col gap-3 p-7.5 bg-white border border-gray-100 shadow-lg rounded-2xl w-[350px] h-fit lg:w-[400px] hover:bg-[#C9B99F] hover:border-[#C9B99F] transform hover:translate-y-[-10px] transition-all">
-                        {card.icon}
-                        <h1 className="text-xl font-semibold text-[#C9B99F] group-hover:text-white">{card.heading}</h1>
-                        <p className="h-[125px] text-gray-600 text-sm leading-relaxed group-hover:text-white">{card.text}</p>
-                        <a href="#" className="flex items-center justify-end gap-2.5 text-[#C9B99F] text-sm font-semibold group-hover:text-white">
-                            Read More <ExternalLink size={18} />
-                        </a>
-                    </div>
-                ))}
-            </div>
-        </section>
+        <>
+            <style>
+                {`
+                @keyframes slideUp {
+                    0% {
+                        transform: translateY(50px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                .slide-up {
+                    animation: slideUp 1s ease forwards;
+                }
+                `}
+            </style>
+
+            <section className="flex py-10 justify-center bg-[url('/Images/tools.jpg')] bg-cover bg-center h-fit lg:h-[85vh] lg:items-center">
+                <div className="flex flex-wrap justify-center gap-5">
+                    {toolData.map((card, index) => (
+                        <div
+                            key={index}
+                            style={{ animationDelay: `${index * 0.3}s`}}
+                            className="slide-up opacity-0 cursor-default group flex flex-col gap-3 p-7.5 bg-white border border-gray-100 shadow-lg rounded-2xl w-[350px] h-fit lg:w-[400px] hover:bg-[#C9B99F] hover:border-[#C9B99F] transform hover:translate-y-[-10px] transition-all">
+                            {card.icon}
+                            <h1 className="text-xl font-semibold text-[#C9B99F] group-hover:text-white">{card.heading}</h1>
+                            <p className="h-[125px] text-gray-600 text-sm leading-relaxed group-hover:text-white">{card.text}</p>
+                            <a href="#" className="flex items-center justify-end gap-2.5 text-[#C9B99F] text-sm font-semibold group-hover:text-white">
+                                Read More <ExternalLink size={18} />
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>   
     )
 }
