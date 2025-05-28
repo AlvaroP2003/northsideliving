@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-2.5">
                     <h2 className="text-lg text-[#9c7b5c] font-semibold">Follow us on</h2>
-                    <div className="flex gap-5">
+                    <div className="flex gap-2.5">
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-2 rounded-full"><Facebook size={15} fill="white" stroke="none"/></div>
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-2 rounded-full"><Linkedin size={15} fill="white" stroke="none"/></div>
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-2 rounded-full"><Instagram size={15} stroke="white"/></div>
