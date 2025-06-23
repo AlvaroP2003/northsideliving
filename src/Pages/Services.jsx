@@ -63,11 +63,13 @@ const servicesData = [
             <div>
                 <div className="flex flex-wrap justify-center gap-5">
                     {servicesData.map((card,index) => (
-                        <div key={index} className="cursor-default flex flex-col gap-3 bg-white rounded-xl p-7 w-[350px] border border-gray-100 shadow-lg">
-                            <h2 className="text-[#C9B99F] text-2xl font-semibold">{card.number}</h2>
+                        <div key={index} className="cursor-default flex flex-col gap-2.5 bg-white rounded-xl p-7 w-[350px] border border-gray-100 shadow-lg">
+                            <div>
+                            <h2 className="text-[#C9B99F] text-xl font-semibold">{card.number}</h2>
                             <h3 className="text-[#C9B99F] text-xl font-semibold">{card.heading}</h3>
-                            <p className="text-sm text-gray-600 font-semibold">{card.intro}</p>
-                            <ul className="flex flex-col gap-1 text-sm text-gray-600 list-disc px-5">
+                            </div>
+                            <p className="text-sm text-neutral-600 font-semibold">{card.intro}</p>
+                            <ul className="flex flex-col gap-1 text-sm text-neutral-500 list-disc px-5">
                                 {card.body.map((item,index) => (
                                     <li key={index}>
                                         {item}

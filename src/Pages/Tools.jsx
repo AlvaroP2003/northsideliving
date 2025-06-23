@@ -48,7 +48,7 @@ export default function Tools() {
                         <div
                             key={index}
                             style={{ animationDelay: `${index * 0.3}s`}}
-                            className="slide-up opacity-0 cursor-default group flex flex-col gap-3 p-7.5 bg-white border border-gray-100 shadow-lg rounded-2xl w-[350px] h-fit lg:w-[400px] hover:bg-[#C9B99F] hover:border-[#C9B99F] transform hover:translate-y-[-10px] transition-all">
+                            className="slide-up opacity-0 cursor-default group flex flex-col gap-3 p-7.5 bg-white border border-gray-100 shadow-lg rounded-2xl w-[350px] h-fit lg:w-[400px] hover:bg-[#C9B99F] hover:border-[#C9B99F] transform hover:translate-y-[-10px] transition-discrete duration-300 ease-in-out">
                             {card.icon}
                             <h1 className="text-xl font-semibold text-[#C9B99F] group-hover:text-white">{card.heading}</h1>
                             <p className="h-[125px] text-gray-600 text-sm leading-relaxed group-hover:text-white">{card.text}</p>
