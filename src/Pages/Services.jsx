@@ -59,8 +59,9 @@ const servicesData = [
 
 
     return (
-        <section className="bg-[url('/Images/services_sml.jpeg')] lg:bg-[url('/Images/services.webp')] bg-cover bg-center h-fit flex flex-col justify-center items-center gap-5 lg:h-[85vh] py-10">
-            <div>
+        <section className="relative bg-[url('/Images/services_sml.jpeg')] lg:bg-[url('/Images/services.webp')] bg-cover bg-center h-fit flex flex-col justify-center items-center gap-5 lg:h-[85vh] py-10">
+            <div className="bg-black/10 absolute inset-0"></div>
+            <div className="z-10">
                 <div className="flex flex-wrap justify-center gap-5">
                     {servicesData.map((card,index) => (
                         <div key={index} className="cursor-default flex flex-col gap-2.5 bg-white rounded-xl p-7 w-[350px] border border-gray-100 shadow-lg">
@@ -81,7 +82,7 @@ const servicesData = [
                 </div>
             </div>
 
-            <div className="flex bg-white rounded-xl py-3 lg:p-5">
+            <div className="flex bg-white rounded-xl py-3 lg:p-5 z-10">
                     <img className="w-[100px] lg:w-[150px] border-r-2 border-gray-200 px-3 lg:px-5" src="Images/property24-01.webp"/>
                     <img className="w-[100px] lg:w-[150px] border-r-2 border-gray-200 px-3 lg:px-5" src="Images/private_property-01.webp"/>
                     <img className="w-[100px] lg:w-[150px] border-r-2 border-gray-200 px-3 lg:px-5" src="Images/payprop-01.webp"/>

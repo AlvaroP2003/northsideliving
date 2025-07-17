@@ -4,7 +4,7 @@ import {PhoneOutgoing,Mail} from "lucide-react"
 export default function Contact() {
     return (
         <section className="relative flex justify-center items-center bg-[url('/Images/contact_sml.jpeg')] lg:bg-[url('/Images/contact.jpg')] bg-cover bg-center h-[90vh] lg:h-[85vh]">
-            <div className="bg-black/20 absolute inset-0"></div>
+            <div className="bg-black/10 absolute inset-0"></div>
             <form className="bg-white flex flex-col gap-4 p-7.5 rounded-lg w-[400px] lg:w-[500px] z-10">
                 <h1 className="text-2xl font-semibold text-[#9c7b5c]">Get in touch</h1>
 

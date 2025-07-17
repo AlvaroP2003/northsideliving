@@ -42,7 +42,8 @@ export default function Tools() {
                 `}
             </style>
 
-            <section className="flex py-10 justify-center bg-[url('/Images/tools_sml.jpeg')] lg:bg-[url('/Images/tools.jpg')] bg-cover bg-center h-fit lg:h-[85vh] lg:items-center">
+            <section className="relative flex py-10 justify-center bg-[url('/Images/tools_sml.jpeg')] lg:bg-[url('/Images/tools.jpg')] bg-cover bg-center h-fit lg:h-[85vh] lg:items-center">
+                <div className="bg-black/10 absolute inset-0"></div>
                 <div className="flex flex-wrap justify-center gap-5">
                     {toolData.map((card, index) => (
                         <div
