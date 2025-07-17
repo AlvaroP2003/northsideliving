@@ -59,7 +59,7 @@ const servicesData = [
 
 
     return (
-        <section className="bg-[url('/Images/services.webp')] bg-cover bg-center h-fit flex flex-col justify-center items-center gap-5 lg:h-[85vh] py-10">
+        <section className="bg-[url('/Images/services_sml.jpeg')] lg:bg-[url('/Images/services.webp')] bg-cover bg-center h-fit flex flex-col justify-center items-center gap-5 lg:h-[85vh] py-10">
             <div>
                 <div className="flex flex-wrap justify-center gap-5">
                     {servicesData.map((card,index) => (

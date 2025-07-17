@@ -21,7 +21,7 @@ export default function Home() {
                 }
                 `}
             </style>
-            <section className="bg-[url('/Images/home.jpg')] bg-cover bg-center h-[90vh] flex items-center justify-center lg:justify-start lg:p-15 lg:[85vh]">
+            <section className="bg-[url('/Images/home_sml.jpeg')] lg:bg-[url('/Images/home.jpg')] bg-cover bg-center h-[90vh] flex items-center justify-center lg:justify-start lg:p-15 lg:[85vh]">
                 <div className="slide-in bg-white flex flex-col w-fit gap-5 p-10 rounded-2xl">
                     <h1 className="font-montserrat text-2xl lg:text-5xl lg:w-[350px]">Find your perfect home</h1>
                     <p className="w-[300px] lg:text-lg text-gray-800">Discover properties tailored to your lifestyle, with expert guidance every step of the way.</p>
