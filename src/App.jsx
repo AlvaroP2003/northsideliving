@@ -5,7 +5,7 @@ import Services from "./Pages/Services"
 import Listings from "./Pages/Listings"
 import Tools from "./Pages/Tools"
 import Contact from "./Pages/Contact"
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 export default function App() {
   return (

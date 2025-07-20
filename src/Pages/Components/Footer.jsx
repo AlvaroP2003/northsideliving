@@ -37,18 +37,18 @@ export default function Footer() {
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-1.5 rounded-full"><Linkedin size={15} fill="white" stroke="none"/></div>
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-1.5 rounded-full"><Instagram size={15} stroke="white"/></div>
                     </div>
-                    <p className="text-gray-500 text-sm font-semibold">CK Reg no: 2025/01880/07</p>
+                    <p className="text-gray-500 text-sm">CK Reg no: 2025/01880/07</p>
                 </div>
             </div>
 
             <div className="flex justify-between gap-10 flex-col-reverse items-center lg:flex-row">
                 <p className="text-sm text-[#9c7b5c] font-semibold py-5">©2025 Copyrights Reserved at Northside Living</p>
 
-                <div className="grid grid-cols-2 gap-10 lg:flex">
-                    <img className="w-[125px]" src="Images/property24-01.webp"/>
-                    <img className="w-[125px]" src="Images/private_property-01.webp"/>
-                    <img className="w-[125px]" src="Images/payprop-01.webp"/>
-                    <img className="w-[125px]" src="Images/betterbond-01.webp"/>
+                <div className="grid grid-cols-2 gap-y-5 gap-x-20 lg:flex lg:gap-10">
+                    <img className="w-[100px] lg:w-[125px]" src="Images/property24-01.webp"/>
+                    <img className="w-[100px] lg:w-[125px]" src="Images/private_property-01.webp"/>
+                    <img className="w-[100px] lg:w-[125px]" src="Images/payprop-01.webp"/>
+                    <img className="w-[100px] lg:w-[125px]" src="Images/betterbond-01.webp"/>
                 </div>
             </div>
         </footer>

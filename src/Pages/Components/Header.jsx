@@ -29,6 +29,9 @@ export default function Header() {
             >
                 <Menu className="text-[#9c7b5c] lg:hidden"/>
             </div>
+
+
+            {/* Hamburger Menu */}
             <div className={`absolute top-0 z-50 bg-white border-l border-gray-200 w-[200px] h-screen px-5 shadow-xl transition-all ${showMenu ? 'right-0' : '-right-[200px]'}`}>
                 <div className="flex justify-end items-center h-[10vh]">
                     <X 
@@ -46,6 +49,7 @@ export default function Header() {
                 </ul>
             </div>
 
+            {/*  Backdorop blur filter */}
             { showMenu ? 
             <div 
                 onClick={() => toggleMenu(false)}
