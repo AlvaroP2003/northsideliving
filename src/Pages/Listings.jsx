@@ -1,10 +1,11 @@
-import { Hourglass } from "lucide-react"
+import { Plus, X } from "lucide-react"
 import { useState } from "react"
 
 
 export default function Listings() {
     
     const [activeTab,setActiveTab] = useState('to-rent')
+    const [showFilters,setShowFilters] = useState(false)
 
     return (
         <section className="h-[90vh] lg:h-[85vh]">
@@ -27,12 +28,86 @@ export default function Listings() {
            </div>
 
            <div className="relative bg-[#C9B99F] h-[20vh] flex items-center justify-center">
-                <div className="flex items-center justify-center h-[30%] gap-5">
+                <div className="relative flex items-center justify-center h-[30%] gap-5">
 
-                    <button className="h-full border-2 border-white w-[150px] text-white rounded-lg">Filters</button>
-                    <input className="bg-white h-full w-[500px] px-10 rounded-lg placeholder:text-sm" placeholder="Search street, suburb or dream..."></input>
+                    <button 
+                        onClick={() => setShowFilters(!showFilters)}
+                        className="h-full border-2 border-white w-[150px] text-white rounded-lg flex justify-between items-center px-5">
+                        <p>Filters</p>
+                        {showFilters ? <X size={15} strokeWidth={3}/> : <Plus size={15} strokeWidth={3}/>}
+                    </button>
+                    <input className="bg-white h-full w-[500px] px-5 rounded-lg placeholder:text-sm" placeholder="Search street, suburb or dream..."></input>
                     <button className="cursor-pointer bg-[#9c7b5c] h-full w-[150px] rounded-lg text-white">Search</button>
 
+                    {showFilters &&
+                    <div className="absolute top-15 w-full bg-white rounded-lg shadow-lg border-1 border-neutral-200">
+                        <div className="grid grid-cols-3 p-5">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+
+                        <div className="flex">
+                            <div className="flex flex-col flex-1 p-5 gap-5">
+                                <h3 className="font-bold text-sm">Features</h3>
+                                <div className="grid grid-cols-2 gap-5">
+                                    <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Pet Friendly</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Garden</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Pool</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Flatlet</label>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col flex-1 p-5 gap-5">
+                                <h3 className="font-bold text-sm">Other</h3>
+                                <div className="grid grid-cols-2 gap-5">
+                                    <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Retirement</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Repossessed</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">On Show</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Securtiy Estate</label>
+                                    </span>
+
+                                     <span className="flex gap-2.5">
+                                        <input className="border-1" type="checkbox" />
+                                        <label className="text-sm">Auction</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
                 </div>
            </div>
         </section>
