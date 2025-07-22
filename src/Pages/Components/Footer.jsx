@@ -30,7 +30,7 @@ export default function Footer() {
                         <NavLink>PAIA Manual</NavLink>
                     </ul>
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-2">
                     <h2 className="text-neutral-500 font-semibold text-sm">Follow us on</h2>
                     <div className="flex gap-2.5">
                         <div className="flex justify-between items-center bg-[#9c7b5c] p-1.5 rounded-full"><Facebook size={15} fill="white" stroke="none"/></div>
